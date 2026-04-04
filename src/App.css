@@ -1,0 +1,525 @@
+/* ═══════════════════════════════════
+   Trash Penguins — App Styles
+   Colors from logo:
+     Dark:    #1a1a1a (black)
+     Accent:  #9EC5E0 (light blue)
+     CTA:     #E84D4D (red from beak)
+     White:   #ffffff
+   ═══════════════════════════════════ */
+
+/* ─── Shared ─── */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 48px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: #E84D4D;
+  color: #fff;
+}
+
+/* ─── Header ─── */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f0f0f0;
+  border-bottom: 2px solid #9EC5E0;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo-img {
+  height: 72px;
+  width: auto;
+}
+
+.header-logo-text {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.header-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header-nav a {
+  font-weight: 600;
+  color: #444;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.header-nav a:hover {
+  color: #9EC5E0;
+}
+
+.header-phone {
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.phone-icon {
+  font-size: 0.85rem;
+}
+
+/* ─── Hero ─── */
+
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a3a4a 100%);
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 80px 24px;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #9EC5E0;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+/* ─── Services ─── */
+
+.services {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.service-card {
+  background: #f8fbfd;
+  border: 1px solid #e4eef5;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(158, 197, 224, 0.2);
+}
+
+.service-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ─── Why Choose Us ─── */
+
+.why-us {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a3a4a 100%);
+}
+
+.why-us .section-title {
+  color: #fff;
+}
+
+.why-us .section-subtitle {
+  color: #9EC5E0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(158, 197, 224, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+  transition: background 0.2s;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: #b0c4d4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ─── About ─── */
+
+.about {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 36px;
+  align-items: center;
+}
+
+.about-photo-vertical {
+  width: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+.about-photo-horizontal {
+  width: 240px;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.about-text h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Contact ─── */
+
+.contact {
+  padding: 80px 0;
+  background: #f8fbfd;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #1a1a1a, #2a3a4a);
+  border-radius: 16px;
+  padding: 36px;
+  color: #fff;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #9EC5E0;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  transition: color 0.2s;
+}
+
+a.contact-link:hover {
+  color: #fff;
+}
+
+.contact-link span {
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 18px;
+  border: 1px solid #dde6ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #9EC5E0;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+}
+
+.form-success {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.success-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-success h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  color: #666;
+}
+
+/* ─── Footer ─── */
+
+.footer {
+  background: #f0f0f0;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 64px;
+  width: auto;
+}
+
+.footer-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #444;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #1a1a1a;
+}
+
+.footer-copy {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* ═══════════════════════════════════
+   Responsive
+   ═══════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .header-nav {
+    order: 3;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+  }
+
+  .header-phone {
+    font-size: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-photo-vertical,
+  .about-photo-horizontal {
+    width: 260px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .header-logo-text {
+    font-size: 1.1rem;
+  }
+}
